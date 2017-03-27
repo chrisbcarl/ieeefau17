@@ -1,0 +1,15 @@
+.full-no-image {
+  background: white no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.navbar-list {
+    padding-left:1em
+}
+
+.img-center {
+	margin: 0 auto;
+}
