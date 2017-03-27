@@ -41,6 +41,5 @@ function loadcontent(elem, pagedir)
         $("#content").show();
         toggle_bg_off();
         $(".dropdown-toggle").dropdown("toggle");
-        $(".navbar-toggle").
     });
 }
