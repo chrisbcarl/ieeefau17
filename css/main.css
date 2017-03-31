@@ -13,3 +13,18 @@
 .img-center {
 	margin: 0 auto;
 }
+
+body {
+    margin-top: 50px;
+}
+
+.container {
+    margin-bottom: 50px;
+}
+
+footer{
+    display: block;
+    background-color: #006699;
+    padding: 50px 50px 25px 50px;
+    color: #FFF;
+}

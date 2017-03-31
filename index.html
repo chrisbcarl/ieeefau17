@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html class="full" lang="en">
+<html class="full-no-image" lang="en">
+
 <!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
 
+<!--<html lang="en">-->
 <head>
 
     <meta charset="utf-8">
@@ -15,7 +17,10 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap Theme-->
     <link href="css/the-big-picture.css" rel="stylesheet">
 
     <!-- Custom CSS -->
@@ -32,9 +37,26 @@
 
 <body>
 
-    <!-- Navigation -->
+    <!-- Navigation
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">WebSiteName</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </nav>
+-->
+
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -43,7 +65,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a id="ieeelogo" href="#"><img class="navbar-brand" src="img/logo.png" alt="logo" style=""></a>
+                <a href="#"><img id="ieeelogo" class="navbar-brand" src="img/logo.png" alt="logo" style=""></a>
                 <a class="navbar-brand" id="ieeefau" href="#">IEEE @ FAU</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -60,83 +82,65 @@
                     <li>
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog</a>
                         <ul class="dropdown-menu">
-                            <li class="dropdown-header">Flux, Amperes, and U</li>
                             <li class="navbar-list"><a id="toc" href="#">Table of Contents</a></li>
-                            <li class="navbar-list"><a id="categories" href="#">Categories</a></li>
+                            <!-- <li class="navbar-list"><a id="categories" href="#">Categories</a></li> -->
                             <li class="navbar-list"><a id="authors" href="#">Authors</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact</a>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-header">IEEE</li>
-                            <li class="divider">
-                                <li class="navbar-list"><a id="contact" href="#">IEEE @ FAU</a></li>
-                                <li class="navbar-list"><a href="http://www.ieee.org/index.html">IEEE.org</a></li>
-                            </li>
-                            <li class="dropdown-header">Join Us!</li>
-                            <li class="divider">
-                                <li class="navbar-list"><a href="http://www.ieee.org/go/join_student">Become a Student Member</a></li>
-                                <li class="navbar-list"><a href="http://www.ieee.org/go/join_professional">Become a Professional Member</a></li>
-                            </li>
                         </ul>
                     </li>
                     <li>
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Events</a>
                         <ul class="dropdown-menu">
-                            <li class="dropdown-header">Annual</li>
-                            <li class="divider">
-                                <li class="navbar-list"><a id="eweek" href="#">Engineering Week</a></li>
-                                <li class="navbar-list"><a id="bluemix" href="#">IBM Bluemix Hackathon</a></li>
-                                <li class="navbar-list"><a id="southeastcon" href="#">IEEE SoutheastCon</a></li>
-                            </li>
-                            <li class="dropdown-header">Semesterly</li>
-                            <li class="divider">
-                                <li class="navbar-list"><a id="meeting" href="#">General Body Meeting</a></li>
+                            <li class="navbar-list"><a id="eweek" href="#">Engineering Week</a></li>
+                            <li class="navbar-list"><a id="bluemix" href="#">IBM Bluemix Hackathon</a></li>
+                            <li class="navbar-list"><a id="southeastcon" href="#">IEEE SoutheastCon</a></li>
+                            <li class="navbar-list"><a id="meeting" href="#">General Body Meeting</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Join Us</a>
+                        <ul class="dropdown-menu">
+                            <li class="navbar-list"><a href="http://www.ieee.org/index.html">IEEE.org</a></li>
+                            <li class="navbar-list"><a href="http://www.ieee.org/go/join_student">Become a Student Member</a></li>
+                            <li class="navbar-list"><a href="http://www.ieee.org/go/join_professional">Become a Professional Member</a></li>
                             </li>
                         </ul>
                     </li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
     </nav>
 
     <!-- Page Content -->
     <div class="container">
-        <span id="content">
-
-        </span>
+        <div id="content" class=" col-md-10 col-md-offset-1"></div>
     </div>
-    <!-- /.container -->
 
-    <!-- Footer -->
-    <footer class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+    <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-
+            <div class="row" >
+                <div class="col-md-4 col-md-offset-1 text-left">
+                    <p>Copyright &copy; IEEE @ FAU 2017</p>
+                    <address>
+                        <abbr title="Phone">P:</abbr>(561) 297-3000
+                        <br>
+                        <abbr title="Email">E:</abbr> <a href="mailto:#">ieee.fau.student.branch@gmail.com</a>
+                    </address>
+                </div>
+                <div class="col-md-2 text-middle">
+                    <a href="https://www.instagram.com/ieeefau/" title="Instagram"><i class="fa fa-instagram fa-6" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/ieeefaustudentbranch" title="Facebook"><i class="fa fa-facebook fa-6"></i></a>
+                </div>
+                <div class="col-md-4 text-right">
+                    <address>
+                        <strong>IEEE @ FAU</strong>
+                        <br>777 Glades Road
+                        <br>Engineering East - 104
+                        <br>Boca Raton, FL 33486
+                        <br>
+                    </address>
                 </div>
             </div>
         </div>
     </footer>
-
-    <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
-        <div class="container">
-            <div class="navbar-header navbar-right">
-                <ul class="nav-right">
-                    <li class="navbar-list" >
-                        <h5>Copyright &copy; IEEE @ FAU 2017</h5>
-                    </li class="navbar-list">
-                </ul>
-            </div>
-            <div class="dropup collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-            </div>
-        </div>
-    </nav>
-
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -146,8 +150,6 @@
 
     <!-- Custom JavaScript -->
     <script src="js/scripts.js"></script>
-
-    <!-- Custom JavaScript -->
     <script src="js/debug.js"></script>
 
 </body>

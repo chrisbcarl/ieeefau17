@@ -13,7 +13,7 @@ body {
 /*http://placehold.it/1920x1080
 */
 .full {
-  background: url('../img/party.jpg') no-repeat center center fixed;
+  background: url('../img/fau_logo_background.png') no-repeat left center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
