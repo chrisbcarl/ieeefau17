@@ -17,6 +17,23 @@ $(document).ready(function(){
 
 });
 
+function loadcontent(elem, pagedir)
+{
+    $(elem).click(function(){
+        console.log(elem + " clicked");
+        $("#content").load(pagedir);
+        $("#content").show();
+        //toggle_bg_off();
+        $(".dropdown-toggle").dropdown("toggle");
+        $(".dropdown-menu li a").removeClass("selected");
+        $(elem).addClass("selected");
+        if ($(elem).is("a")) {
+            $(".navbar-collapse").collapse("hide");
+        }
+        $(".dropdown-toggle").blur()
+    });
+}
+
 
 function app()
 {
@@ -65,16 +82,16 @@ function loadhome(elem)
         //toggle_bg_on();
     });
 }
-function loadcontent(elem, pagedir)
-{
-    $(elem).click(function(){
-        console.log(elem + " clicked");
-        $("#content").load(pagedir);
-        $("#content").show();
-        //toggle_bg_off();
-        $(".dropdown-toggle").dropdown("toggle");
-    });
-}
+// function loadcontent(elem, pagedir)
+// {
+//     $(elem).click(function(){
+//         console.log(elem + " clicked");
+//         $("#content").load(pagedir);
+//         $("#content").show();
+//         //toggle_bg_off();
+//         $(".dropdown-toggle").dropdown("toggle");
+//     });
+// }
 function forcecontent(pagedir)
 {
     console.log("force loaded content from: " + pagedir);
