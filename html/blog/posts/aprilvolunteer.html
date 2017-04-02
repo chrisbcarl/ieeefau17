@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row  " id="mainbody">
 
     <!-- Blog Post Content Column -->
     <div class="col-lg-8">
@@ -22,8 +22,9 @@
         <!-- Post Intro -->
         <p class="lead">Volunteers are needed for the SeaPerch Qualifier Competition at AD Henderson on Saturday, April 2nd.</p>
 
-        <!-- Blog Image -->
+        <!-- Blog Image
         <img src="http://placehold.it/150x100" height="100" width="150" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">
+        -->
         <!--- Post Content -->
         <p>Let your officers know if your interested in volunteering so we can send you forms to complete to sign you up for the event</p>
 
@@ -32,13 +33,13 @@
     <!-- Blog Sidebar Widgets Column -->
     <div class="col-md-4">
 
-        <!-- Side Widget Well -->
-        <div class="well">
+        <!-- Side Widget  -->
+        <div class="">
             <section id="author_section"></section>
         </div>
 
-        <!-- Blog Categories Well -->
-        <div class="well">
+        <!-- Blog Categories  -->
+        <div class="">
             <section id="toc"></section>
         </div>
 
@@ -48,3 +49,20 @@
 <!-- /.row -->
 
 <hr>
+
+<script type="text/javascript">
+    $("#author_section").load("html/blog/authors/raldirisr.html");
+    $("#author").show();
+    $("#back_to_toc").click(function(){
+        console.log("#back_to_toc" + " clicked");
+        $("#content").load("html/blog/toc.html");
+        $("#content").show();
+        //toggle_bg_off();
+        $(".dropdown-menu li a").removeClass("selected");
+        $("#back_to_toc").addClass("selected");
+        if ($("#back_to_toc").is("a")) {
+            $(".navbar-collapse").collapse("hide");
+        }
+        $(".dropdown-toggle").blur()
+    });
+</script>

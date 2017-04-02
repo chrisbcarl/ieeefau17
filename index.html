@@ -1,26 +1,21 @@
 <!DOCTYPE html>
-<html class="full-no-image" lang="en">
-
+<html class="full" lang="en">
 <!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
 
-<!--<html lang="en">-->
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="ieee fau">
     <meta name="author" content="FAU IEEE Student Branch">
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
 
     <title>IEEE @ FAU</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-
-    <!-- Bootstrap Theme-->
+    <!-- Custom CSS -->
     <link href="css/the-big-picture.css" rel="stylesheet">
 
     <!-- Custom CSS -->
@@ -57,44 +52,49 @@
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">About</a>
                         <ul class="dropdown-menu">
                             <li class="navbar-list"><a id="whoweare" href="#">Who we are</a></li>
-                            <li class="navbar-list"><a id="leadership" href="#">Leadership</a></li>
                             <li class="navbar-list"><a id="members" href="#">Members</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog</a>
-                        <ul class="dropdown-menu">
-                            <li class="navbar-list"><a id="toc" href="#">Table of Contents</a></li>
-                            <li class="navbar-list"><a id="categories" href="#">Categories</a></li>
-                            <li class="navbar-list"><a id="authors" href="#">Authors</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact</a>
-                        <ul class="dropdown-menu">
-                            <li class="navbar-list"><a id="contact" href="#">IEEE @ FAU</a></li>
-                            <li class="navbar-list"><a href="http://www.ieee.org/index.html">IEEE.org</a></li>
-                            <li class="navbar-list"><a href="http://www.ieee.org/go/join_student">Become a student member</a></li>
-                            <li class="navbar-list"><a href="http://www.ieee.org/go/join_professional">Become a professional member</a></li>
-                        </ul>
+                        <a id="toc" href="#">Blog</a>
                     </li>
                     <li>
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Events</a>
                         <ul class="dropdown-menu">
+                            <li class="navbar-list"><a id="southeastcon" href="#">IEEE SoutheastCon</a></li>
                             <li class="navbar-list"><a id="eweek" href="#">Engineers Week</a></li>
                             <li class="navbar-list"><a id="bluemix" href="#">IBM Bluemix Hackathon</a></li>
-                            <li class="navbar-list"><a id="southeastcon" href="#">IEEE SoutheastCon</a></li>
-                            <li class="navbar-list"><a id="meeting" href="#">General Body Meeting</a></li>
+                            <!-- <li class="navbar-list"><a id="meeting" href="#">General Body Meeting</a></li> -->
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Join Us</a>
+                        <ul class="dropdown-menu">
+                            <li class="navbar-list"><a target="_blank" href="http://www.ieee.org/index.html">IEEE.org</a></li>
+                            <li class="navbar-list"><a target="_blank" href="http://www.ieee.org/go/join_student">Become a student member</a></li>
+                            <li class="navbar-list"><a target="_blank" href="http://www.ieee.org/go/join_professional">Become a professional member</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
+            <!-- /.navbar-collapse -->
         </div>
+        <!-- /.container -->
     </nav>
+
+    <header id="header" class="header">
+        <div class="text-center">
+            <div class="col-xs-5 line"><hr></div>
+            <div class="col-xs-2 logo"><img src="img/ieeelogo.png" width="170" height="100"></div>
+            <div class="col-xs-5 line"><hr></div>
+        </div>
+    </header>
 
     <!-- Page Content -->
     <div class="container">
-        <div id="content" class=" col-md-10 col-md-offset-1"></div>
+        <div class="row">
+            <div id="content" class="col-md-10 col-md-offset-1 well"></div>
+        </div>
     </div>
 
     <footer>
@@ -137,32 +137,8 @@
     <!-- Custom JavaScript -->
     <script src="js/scripts.js"></script>
     <script src="js/debug.js"></script>
+    <!-- <script src="html/blog/scripts.js"></script> -->
 
 </body>
 
 </html>
-
-
-<!--
-<div class="row">
-    <div class="col-md-6 col-sm-12">
-        <h1>The Big Picture</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, iusto, unde, sunt incidunt id sapiente rerum soluta voluptate harum veniam fuga odit ea pariatur vel eaque sint sequi tenetur eligendi.</p>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-md-6 col-sm-12">
-        <button id="button1" type="button" class="btn btn-default">article1</button>
-        <button id="button2" type="button" class="btn btn-primary">article2</button>
-        <button id="button3" type="button" class="btn btn-success">hide</button>
-        <button id="button4" type="button" class="btn btn-info">show</button>
-    </div>
-    <div class="col-md-6 col-sm-12">
-        <button id="button5" type="button" class="btn btn-warning">hide buttons</button>
-        <button id="button6" type="button" class="btn btn-danger">blank</button>
-        <button id="button7" type="button" class="btn btn-link">picture</button>
-    </div>
-</div>
-
--->

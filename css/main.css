@@ -11,8 +11,53 @@
 }
 
 .img-center {
-	margin: 0 auto;
+  margin: 0 auto;
     max-width: 69%;
+}
+
+.selected {
+  color: #fff;
+  text-decoration: none;
+  background-color: #006699;
+  outline: 0;
+}
+
+.well {
+  background-color: #ffffff;
+  margin-top: auto;
+}
+
+.navbar-nav > li > a {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.navbar {
+  min-height: 60px;
+}
+
+body {
+    margin-top: 75px;
+}
+
+footer{
+    display: block;
+    background-color: #006699;
+    padding: 50px 50px 25px 50px;
+    color: #FFF;
+    /*border-top: 2px solid #000;*/
+}
+
+.full-no-image {
+  background: white no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.img-center {
+  margin: 0 auto;
 }
 
 .selected {
@@ -27,6 +72,7 @@
 }
 
 .well {
+  padding: 0px 50px 50px 50px;
   background-color: #ffffff;
 }
 
@@ -35,12 +81,8 @@
   margin-top: 5px;
 }
 
-.navbar {
-  min-height: 60px;
-}
-
 a > .navbar-brand {
-  padding: 5px 5px 0px 5px;
+  padding: 5px 5px 0px 20px;
   height: 60px;
 }
 
@@ -48,13 +90,29 @@ nav > div {
   margin-bottom: 0px;
 }
 
-body {
-    margin-top: 50px;
+.img-circle {
+  margin-bottom: 15px;
 }
 
-footer{
-    display: block;
-    background-color: #006699;
-    padding: 50px 50px 25px 50px;
-    color: #FFF;
+@media (min-width: 992px){
+  .col-md-offset-1 {
+      margin-left: 5%;
+  }
+}
+
+#mainbody {
+  margin-top: 20px;
+}
+
+#content > .row > .well {
+  margin-top: 20px;
+}
+
+header {
+    background: url("../img/ee1.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
 }

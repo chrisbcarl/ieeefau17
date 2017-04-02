@@ -6,14 +6,13 @@
 
 body {
 	margin-top: 50px;
-	margin-bottom: 50px;
 	background: none;
 }
 
 /*http://placehold.it/1920x1080
 */
 .full {
-  background: url('../img/fau_logo_background.png') no-repeat left center fixed;
+  background: url('../img/fauowl.png') no-repeat left center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
